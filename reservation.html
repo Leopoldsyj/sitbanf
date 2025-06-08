@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>résevation d'hôtel à Banfora</title>
+  <link href="banfora.css" rel="stylesheet" > <!-- lien vers le CSS -->
+</head>
+<body>
+
+  <div id="header">
+        <img src="banfotof.jpg" alt="En-tête de banfora " width="100%">
+        <div class="logo">
+            <img src="logo.png"alt="logo du site" class="site-logo">
+        <h1>🌴BANFORA VOUS ACCUEILLE 🙂</h1>
+    </div>
+      <div id="nav">
+        <ul>
+            <li><a href="Banf.html">Accueil</a></li>
+            <li><a href="Patrimoine.html">Patrimoine</a></li>
+            <li><a href="reservation.html">Réservation d'hôtel</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+    </div>
+<main>
+    <h2>Réservation d'hôtel</h2>
+    <p>Remplissez ce formulaire pour faire une reservation d'hôtel</p>
+<form method="post" action="traitement.php">
+  <fieldset>
+    <legend>Hôtel</legend>
+    <label for="hôtel">Quel hôtel vous conviendra?</label>
+<select name="hôtel" id="hôtel">
+  <option value="palace">CASCADES PALACE</option>
+  <option value="CALYPSO">CALYPSO</option>
+  <option value="CANNE">CANNE à SUCRE</option>
+  <option value="RONIER">LES RONIERS</option>
+</select><br/>
+  </fieldset>
+<fieldset>
+<legend>Information sur le client</legend> 
+<label for="nom">Quel est votre nom ? </label>
+<input type="text" name="nom" id="nom" autofocus  required /><br/>
+
+<label for="prenom">Quel est votre prénom ?</label>
+<input type="text" name="prenom" id="prenom" required /><br/>
+
+<label for="email">Quel est votre e-mail ?</label>
+<input type="email" name="email" id="email" /><br/>
+
+<label for="tel">Quel est numéro de téléphone</label>
+<input type="tel" name="tel" id="tel" required>
+</fieldset>
+<fieldset>
+<legend>Détails pour la réservation</legend> <!-- Titre du fieldset -->
+<p>
+<label for="arrivée">Quel est votre date d'arrivée?</label>
+<input type="date" name="arrivée" id="arrivée"/ required><br/>
+
+<label for="depart">Quel est votre date de depart?</label>
+<input type="date" name="depart" id="depart"/ required><br/>
+
+<label for="nuit">Vous feriez combien de nuit chez nous?</label>
+<input type="number" name="nuit" id="nuit"><br/>
+
+<label for="accompagnant">Donnez le nombre de personne</label>
+<input type="number" name="accompagnant" id="accompagnant"><br/>
+
+<label for="nchambre">Combien de chambre voulez vous?</label>
+<input type="number" name="nchambre" id="nchambre"><br/>
+
+<label for="tchambre">Quel type de chambre vous voulez?</label>
+<select name="tchambre" id="tchambre">
+  <option value="simple">Simple</option>
+  <option value="luxieuse">Luxieuse</option>
+</select><br/>
+<label for="paiement">Quel sera le mode de paiement?</label>
+<select name="paiement" id=paiement required>
+  <option value="carte bancaire">Carte bancaire</option>
+  <option value="paiement mobile">Paiement mobile</option>
+   <option value="liquidité">Liquidité</option>
+</select>
+</p>
+</fieldset>
+<input type="submit" value="Envoyer" />
+</form>
+</main>
+<footer>
+    <div id="auteur">
+        <h1>Les auteurs de ce site</h1>
+        <p>DIARRA Marouane & SAGNON Léopold</p>
+        <p>Contact : +226 52753041</p>
+    </div>
+
+    <div id="infos-supp">
+        <h1>Informations supplémentaires</h1>
+        <p>Vous trouverez des informations supplémentaires en visitant ces liens :</p>
+        <ul>
+            <li><a href="https://discover-burkinafaso.com/banfora-et-ses-environs/">Visitez Banfora en profondeur</a></li>
+            <li><a href="https://www.tripadvisor.fr/Hotels-g482833-Banfora_Cascades_Region-Hotels.html">Les meilleurs hôtels de Banfora</a></li>
+        </ul>
+    </div>
+
+    <div id="remerciements">
+        <h1>Remerciements</h1>
+        <ul>
+            <li><a href="https://www.univ-bobo.gov.bf/etablissements/ufr-institut-cu/ecole-superieure-dinformatique">École Supérieure d'Informatique (ESI)</a></li>
+            <li>DR Abdoul Aziz Kindo</li>
+        </ul>
+    </div>
+</footer>
+
+  </body>
+  </html>
